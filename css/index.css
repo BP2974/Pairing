@@ -98,6 +98,7 @@
     left: 34px;
     top: 529px;
     border: 1px solid #FFFFFF;
+    padding-left: 33px;
     
     font-style: normal;
     font-weight: 400;
@@ -117,6 +118,7 @@
     left: 305px;
     top: 529px;
     border: 1px solid #FFFFFF;
+    padding-left: 33px;
     
     font-style: normal;
     font-weight: 400;
@@ -124,6 +126,29 @@
     line-height: 33px;
     color: white;
 }
-#section1 button img {
-    width: 28px;
+#section1 #down_g:hover {
+    background-color: #FFFFFF;
+    color: #186BFF;
+    padding-left: 0px;
+    transition: all 0.5s ease-in-out;
+}
+#section1 #down_a:hover {
+    background-color: #FFFFFF;
+    color: #186BFF;
+    padding-left: 0px;
+    transition: all 0.5s ease-in-out;
+}
+#section1 #gp {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    left: 53px;
+    top: 537px;
+}
+#section1 #as {
+    position: absolute;
+    width: 29px;
+    height: 28px;
+    left: 326px;
+    top: 536px;
 }
