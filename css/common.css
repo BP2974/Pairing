@@ -1,0 +1,77 @@
+body {background-color: #F5F5F5;}
+
+a {color: black;} 
+a:link {color: black;}
+a:hover {color: black;}
+a:visited {color: black;}
+a:active {color: black;}
+
+.blind {display: none !important;} 
+.inner {padding: 20px; max-width: 1402px; margin: 0 auto;}
+.clear {clear: both;}
+
+/* header */
+header {
+    /* border: 2px solid red; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: #186dff58;
+    backdrop-filter: blur(3px);
+}     
+header nav {
+    /* border: 2px solid blue; */
+    height: 80px;
+}
+header nav h1 {
+    /* border: 2px solid yellow; */
+    float: left;
+    width: 175px;
+}
+header nav h1 a{
+    /* border: 1px solid red; */
+    display: block;
+}
+header nav h1 img {
+    width: 48px;
+    height: 40px;
+}
+header nav ul#gnb {
+    /* border: 3px solid orange; */
+    position: static;
+    top: 85px;
+    right: 0;
+    width: calc(100% - 175px);
+    height: auto;
+    float: left;
+    text-align: right;
+}
+header nav ul#gnb>li {
+    /* border: 1px solid black; */
+    /* border-top: 1px solid #ddd; */
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 20px;
+    padding-top: 5px;
+} 
+header nav ul#gnb>li a {
+    color: white;
+}
+header nav ul#gnb>li a:hover {
+    color: white;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    position: static;
+}
+footer .profile{
+    display: inline-block;
+    padding-right: 30px;
+}

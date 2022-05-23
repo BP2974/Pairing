@@ -1,0 +1,60 @@
+#section1 {
+    position: relative;
+    height: 500px;
+}
+#section1 #title {
+    position: absolute;
+    left: 42px;
+    top: 60px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 33px;
+
+    color: #414141;
+}
+#section1 #sub_title {
+    position: absolute;
+    left: 33px;
+    top: 100px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 52px;
+
+    color: #000000;
+}
+#section1 #move{
+    position: absolute;
+    top: 200px;
+}
+.words {
+    color: #186BFF;
+    font-size: 0;
+    line-height: 1;
+}
+.words span {
+    font-size: 10vh;
+    display: inline-block;
+    animation: move 2s ease-in-out infinite;
+}
+/* Create Animation */
+@keyframes move {
+    0%
+    {
+        transform: translate(-33%,0)
+    }
+    50%
+    {
+        text-shadow: 0 15px 40px rgba(0,0,0,0.6);
+    }
+    100%
+    { 
+        transform: translate(33%,0);
+    }
+}
+.words span:nth-child(2){animation-delay: .5s;}
+.words span:nth-child(3){animation-delay: 1s;}
+.words span:nth-child(4){animation-delay: 1.5s;}
