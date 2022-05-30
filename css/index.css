@@ -1,9 +1,13 @@
 #move {
-    background-color: #186BFF;
+    background-color: #186dff90;
     border-radius: 0 0 115px 115px;
     height: 780px;
     overflow: hidden;
     position: relative;
+    background-image: url(../img/img1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-blend-mode: multiply;
 }
 #move .wave {
     position: absolute;
@@ -84,13 +88,17 @@
 
     color: #FFFFFF;
 }
-#section1 #hand {
+/* #section1 #hand {
     position: absolute;
     width: 456px;
     height: 569px;
     left: 909px;
     top: 124px;
-}
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+} */
 #section1 #down_g {
     box-sizing: border-box;
 
@@ -161,56 +169,61 @@
     height: 750px;
 }
 #section2 h2 {
+    font-family: 'SBAggroB';
     position: absolute;
-    left: 44px;
-    top: 86px;
-
-    font-style: normal;
-    font-weight: 600;
-    font-size: 33px;
-    line-height: 52px;
+    left: 42px;
+    top: 237px;
+    font-size: 77px;
+    line-height: 121px;
 }
-#section2 p {
-    position: absolute;
-    width: 700px;
-    height: 114px;
-    left: 46px;
-    top: 543px;
-
+#section2 h2 .blue {
+    color: #186BFF;
+    font-size: 150px;
+}
+#section2 h2 div {
+    display: inline-block;
+    background-color: #186BFF;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+#section2 h2 div:hover {
+    width: 450px;
+}
+#section2 #text{
+    top: 22px;
+    left: 22px;
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
+    font-weight: 500;
+    font-size: 13px;
+    vertical-align: middle;
+    text-align: center;
 }
 #section2 #t1{
     position: absolute;
     left: 791px;
-    top: 129px;
-    text-align: center;
+    top: 209px;
 }
 #section2 #t2{
     position: absolute;
-    left: 1034.07px;
-    top: 190.2px;
-    text-align: center;
+    left: 1004.07px;
+    top: 260px;
 }
 #section2 #t3{
     position: absolute;
     left: 791px;
-    top: 263.7px;
-    text-align: center;
+    top: 313px;
 }
 #section2 #t4{
     position: absolute;
-    left: 1034.07px;
-    top: 331.13px;
-    text-align: center;
+    left: 1004.07px;
+    top: 367px;
 }
 #section2 #t5{
     position: absolute;
     left: 883.8px;
-    top: 418.33px;
-    text-align: center;
+    top: 425px;
 }
 #section2 .text {
     position: absolute;
@@ -226,33 +239,7 @@
 /* section3 */
 #section3 {
     position: relative;
-    height: 700px;
+    height: 750px;
     padding: 50px;
-}
-#section3 #step dl{
-    display: inline-block;
-    margin-right: 170px;
-    border-bottom: #186BFF 3px solid;
-}
-#section3 #step dl:last-child{
-    margin-right: 0;
-}
-#section3 #step dt{
-    font-weight: bold;
-}
-#section3 #step dd{
-    font-size: 28px;
-}
-#section3 #step .blue{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 66px;
-    color: #186BFF;
-}
-#section3 h2 {
-    margin-top: 200px;
-}
-#section3 h2 span{
-    color: #186BFF;
+    background-color: #186BFF;
 }

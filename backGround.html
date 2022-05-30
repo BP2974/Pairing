@@ -39,7 +39,7 @@
 </head>
 
 <body class="wrap">
-    <header>
+    <header class="fade">
         <nav class="inner">
             <h1><a href="index.html"><img src="./img/logo.png"><span class="blind">페어링:Pairing</span></a></h1>
             <ul id="gnb">
@@ -50,73 +50,41 @@
         </nav>
     </header>
 
-    <section id="section1" class="inner">
+    <section id="section1" class="inner fade">
         <h2 id="title">Project Background</h2>
         <p id="sub_title">시간이 지나갈수록 늘어나는<br />부모와 자녀사이의 문제</p>
-        <div id="move">
-            <div class="words wors-1">
-                <span>시</span>
-                <span>간</span>
-                <span>이</span>
-                <span>&nbsp;</span>
-                <span>지</span>
-                <span>나</span>
-                <span>갈</span>
-                <span>수</span>
-                <span>록</span>
-                <span>&nbsp;</span>
-                <span>늘</span>
-                <span>어</span>
-                <span>나</span>
-                <span>는</span>
-            </div>
-            <div class="words wors-1">
-                <span>부</span>
-                <span>모</span>
-                <span>와</span>
-                <span>&nbsp;</span>
-                <span>자</span>
-                <span>녀</span>
-                <span>사</span>
-                <span>이</span>
-                <span>의</span>
-                <span>&nbsp;</span>
-                <span>문</span>
-                <span>제</span>
-            </div>
-            <div class="words wors-1">
-                <span>P</span>
-                <span>A</span>
-                <span>I</span>
-                <span>R</span>
-            </div>
-        </div>
         <div class="clear"></div>
     </section>
 
-    <footer>
-        <div id="footer_L" class="inner">
-            <ul class="profile">
-                <li>임어진</li>
-                <li>Planner</li>
-            </ul>
-            <ul class="profile">
-                <li>강은서</li>
-                <li>Designer</li>
-            </ul>
-            <ul class="profile">
-                <li>백민경</li>
-                <li>Programmer</li>
-            </ul>
-        </div>
-        <div id="footer_R" class="inner">
-            <h2 class="blind">사이트로고</h2>
-            <p>
-                계원예술대학교 | 디지털미디어디자인과<br />
-                프로젝트 스튜디오 1 | 페어링
-            </p>
-        </div>
-    </footer>
+    <div id="footer_back">
+        <footer class="inner">
+            <div id="footer_L">
+                <ul class="profile">
+                    <li>임어진</li>
+                    <li>Planner</li>
+                </ul>
+                <ul class="profile">
+                    <li>강은서</li>
+                    <li>Designer</li>
+                </ul>
+                <ul class="profile">
+                    <li>백민경</li>
+                    <li>Programmer</li>
+                </ul>
+            </div>
+            <div id="footer_R">
+                <h2><img src="./img/logo.png"></h2>
+                <p>
+                    계원예술대학교 | 디지털미디어디자인과<br />
+                    프로젝트 스튜디오 1 | 페어링
+                </p>
+            </div>
+            <div class="clear"></div>
+        </footer>
+    </div>
+
+    <script>$(window).fadeThis();</script>
+
 </body>
 
 </html>
