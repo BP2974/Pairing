@@ -140,6 +140,35 @@ body {
     50% {top: 600px;}
     100% {top: 590px}
 }
+#section1 #p1 {
+    position: absolute;
+    top: -50px;
+    right: 420px;
+    cursor: pointer;
+    transition: all 1s;
+}
+#section1 #p2 {
+    position: absolute;
+    left: -50px;
+    top: 120px;
+    cursor: pointer;
+    transition: all 1s;
+}
+#section1 #p3 {
+    position: absolute;
+    top: 500px;
+    left: 320px;
+    cursor: pointer;
+    transition: all 1s;
+}
+#section1 #p4 {
+    position: absolute;
+    top: 550px;
+    right: -50px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
 
 /* #move {
     background-color: #186dff90;
