@@ -34,6 +34,7 @@
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/jquery.fadethis.js"></script>
+    <script src="https://cdn.rawgit.com/jquery/jquery-mousewheel/master/jquery.mousewheel.min.js"></script>
     <script src="./js/common.js"></script>
 
     <title>페어링:Pairing</title>
@@ -52,10 +53,42 @@
     </header>
 
     <section id="section1" class="inner fade">
-        <h2>페어링<br/>Pairing</h2>
-        <img class="img1" src="./img/hand.png">
-        <img class="img2" src="./img/hand.png">
+        <h2>익명을 통한 서로의 솔직담백한 이야기</h2>
+        <img src="./img/mokup.png">
+        <ul>
+            <li>하루질문</li>
+            <li>체크리스트</li>
+            <li>익명채팅</li>
+        </ul>
+        <div class="clear"></div>
+        <p>페어링이 처음이시라구요?<br/>걱정마세요!</p>
     </section>
+    
+    <section id="section2" class="side_scroll">
+        <div class="scroll_element">
+            <img src="./img/g1.png">
+            <h2>간편하게 쓱 로그인</h2>
+        </div>
+        <div class="scroll_element">
+            <img src="./img/g2.png">
+            <h2>하루질문에 답변해보세요!</h2>
+        </div>
+        <div class="scroll_element">
+            <img src="./img/g3.png">
+            <h2>나와 다른 생각들을 알아보세요!</h2>
+        </div>
+        <div class="scroll_element">
+            <img src="./img/g4.png">
+            <h2>캘린더로 한눈에 확인!</h2>
+        </div>
+    </section>
+
+    <section id="section3" class="inner">
+        <h2>익명채팅을 통해<br/>실시간으로 물어보고 답해보세요!</h2>
+        <img src="./img/d1.png">
+    </section>
+
+    
 
     <div id="footer_back">
         <footer class="inner">
@@ -84,7 +117,14 @@
         </footer>
     </div>
 
-    <script>$(window).fadeThis();</script>
+    <script>
+    $(window).fadeThis();
+
+    $(".side_scroll").mousewheel(function(event, delta) {
+        this.scrollLeft -= (delta * 200);
+        event.preventDefault();
+    });
+</script>
 </body>
 
 </html>

@@ -1,0 +1,131 @@
+/* section1 */
+body {
+    background-color:  #171717;
+}
+#section1 h2 {
+    font-weight: 500;
+    font-size: 19px;
+    color: #FFF;
+    margin-top: 100px;
+}
+#section1 ul {
+    margin-top: 90px;
+    font-weight: 500;
+    font-size: 40px;
+    color: #979797;
+    line-height: 66px;
+}
+#section1 ul li {
+    display: inline;
+    float: left;
+    width: 25%;
+    margin: 15px 0;
+}
+#section1 ul li.blue {
+    font-style: normal;
+    font-weight: 600;
+    color: #186BFF;
+}
+
+/* section2 */
+#section2 h2 {
+    font-weight: 500;
+    font-size: 19px;
+    color: #FFF;
+    margin-top: 100px;
+}
+#section2 img {
+    margin: 10px 0;
+}
+#section2 img.right {
+    float: right;
+}
+
+/* section3 */
+#section3 {
+    position: relative;
+    height: 1200px;
+}
+#section3 h2 {
+    font-weight: 500;
+    font-size: 19px;
+    color: #FFF;
+    margin-top: 100px;
+}
+#section3 img {
+    margin-top: 100px;
+}
+#section3 #textbox1 {
+    position: absolute;
+    left: 200px;
+}
+#section3 #textbox2 {
+    position: absolute;
+    left: 600px;
+}
+#section3 #textbox3 {
+    position: absolute;
+    left: 1000px;
+}
+
+/* section4 */
+#section4 h2 {
+    font-weight: 500;
+    font-size: 19px;
+    color: #FFF;
+    margin-top: 100px;
+}
+#section4 .typo {
+    font-size: 38px;
+    font-family: "SBAggroM";
+    margin: 30px 0;
+    color: #FFFFFF;
+}
+#section4 p {
+    font-family: "SBAggroB";
+    font-size: 70px;
+    line-height: 100px;
+    margin: 100px 0;
+    color: #FFFFFF;
+}
+
+/* section5 */
+#section5 h2 {
+    font-weight: 500;
+    font-size: 19px;
+    color: #FFF;
+    margin-top: 100px;
+}
+#section5 ul {
+    width: 33.33%;
+    float: left;
+}
+#section5 li {
+    font-family: "SBAggroL";
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+#section5 img {
+    width: 300px;
+}
+
+/* section6 */
+#section6 {
+    position: relative;
+    height: 1500px;
+}
+#section6 .img{
+    animation: rotate_image 10s linear infinite;transform-origin: 50% 50%;
+}
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#section6 .mokup {
+    position: absolute;
+    width: 800px;
+    bottom: 0;
+    right: 0;
+}
