@@ -34,6 +34,8 @@
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/common.js"></script>
+    <script src="./js/jquery.fadethis.js"></script>
+
 
     <title>페어링:Pairing</title>
 </head>
@@ -57,11 +59,64 @@
             서로가 서로를 이해하지 못하여 생겨나는 문제들 혹은 각자가 가지고 있는<br/>
             고민들을 해결하면 얼마나 좋을까요?
         </p>
-        <img src="./img/tb1.png">
-        <img src="./img/tb2.png">
-        <img src="./img/tb3.png">
-        <h3></h3>
+        <img id="tb1" src="./img/tb1.png">
+        <img id="tb2" src="./img/tb2.png">
+        <img id="tb3" src="./img/tb3.png">
     </section>
+
+    <section id="section2" class="inner">
+        <h2>코로나19 이후 늘어난 가족상담</h2>
+        <img src="./img/chart.svg">
+        <p>예전부터 꾸준히 존재하는 부모와 자녀의 갈등은, 코로나로 인해 집에 있는 시간이 늘어난 점에서 엑스틴 부모와 MZ세대 자녀의 갈등과 청소년상담이 현저히 늘어났습니다.<br/>
+            또한 청소년을 대상으로 한 설문조사 결과에 의하면 부모님과의 대화가 통하지 않아 청소년기에 스트레스 비울이 커지는것으로 조사 되었습니다.</p>
+    </section>
+
+    <div id="section3">
+        <section class="inner">
+            <h2>부모 혹은 자녀와 주로 어떤 문제로 갈등상황이 생기나요?</h2>
+        </section>
+        <div id="text" class="slide-bottom" data-plugin-options='{"speed":1000}'>
+            <img id="t1" src="./img/t1.png">
+            <img id="t2" src="./img/t2.png">
+            <img id="t3" src="./img/t3.png">
+            <img id="t4" src="./img/t4.png">
+            <img id="t5" src="./img/t5.png">
+            <img id="t6" src="./img/t6.png">
+        </div>
+    </div>
+
+    <section id="section4" class="inner">
+        <ul>
+            <li class="slide-top" data-plugin-options='{"speed":400}'><h2>부모와 자녀를<br/>주 사용자로</h2></li>
+            <li class="slide-top" data-plugin-options='{"speed":600}'><h2>익명성을 확실하게<br/>보장해주고</h2></li>
+            <li class="slide-top" data-plugin-options='{"speed":800}'><h2>서로의 이야기를<br/>솔직하게 털어놓으며</h2></li>
+            <li class="slide-top" data-plugin-options='{"speed":1000}'><h2>해결의 실마리를<br/>제공해주는</h2></li>
+        </ul>
+        <div id="bg"><img src="./img/bg1.png"></div>
+        <img id="bar" src="./img/Rectangle2.png">
+        <img id="logo" src="./img/logo_bg.png">
+    </section>
+
+    <section id="section5" class="inner">
+        <h2>가족상담사 인터뷰</h2>
+        <p>가족상담사를 찾아봬서 실제로 보통 무슨 문제로 상담을 많이 하는지, 앱에서의 보완점은 무엇인지,<br/>
+            앱에 대해서 어떻게 생각하는지에 대해 물어보고, 상담을 받으러 오는 분들 중 갈등을 해결하지 못하는 경우가 있는지 등에 대해 인터뷰를 진행해 보았습니다.</p>
+    </section>
+
+    <section id="section6" class="inner">
+        <div id="qna">
+            <h2>Q. 주로 어떤 주제로 상담을 하나요?</h2>
+            <p>가족과 부부를 가장 많이 상담하고 청소년 문제를 가지고 있는 가족상담으로 많이들 찾아오십니다.</p>
+            <h2>Q. 상담실을 찾는 나이대는 어떻게 되나요?</h2>
+            <p>중학생부터 50대 초-중반까지가 많이 찾아오고 가장 많이 찾아오는 나이대는 40대까지 찾아오는 것 같아요.</p>
+            <h2>Q. 이런 서비스가 나오면 오프라인 상담에 어떤 영향을 끼칠 것 같다고 생각하시나요?</h2>
+            <p>별도로 움직일 것 같습니다. 앱이 활성화돼서 모든 사람이 편안하게 들어갈 수 있는 앱이라면 
+                도움은 되겠지만, 기계를 통해 감정을 얘기하고 문제해결까지 이뤄지는 시스템이다 보니 자식에게는 좋겠지만 부모는 오프라인 상담을 선호할 것 같아요.</p>
+        </div>
+        <img id="qna_img" src="./img/qna.png">
+        <div class="clear"></div>
+    </section>
+    <img id="bg2" src="./img/bg2.png">
 
     <div id="footer_back">
         <footer class="inner">

@@ -1,4 +1,22 @@
-#move {
+body {
+    background-color: #171717;
+}
+
+/* section1 */
+#section1 h2 {
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    margin-left: -360px;
+    font-family: 'SB Aggro';
+    font-size: 160px;
+    display: inline;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/* #move {
     background-color: #186dff90;
     border-radius: 0 0 115px 115px;
     height: 780px;
@@ -59,7 +77,7 @@
     }
 }
 
-/* section1 */
+/* section1
 #section1 {
     height: 780px;
     position: relative;
@@ -98,7 +116,7 @@
     -webkit-transform-style: preserve-3d;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
-} */
+} 
 #section1 #down_g {
     box-sizing: border-box;
 
@@ -163,7 +181,7 @@
     top: 536px;
 }
 
-/* section2 */
+/* section2
 #section2 {
     position: relative;
     height: 750px;
@@ -236,10 +254,11 @@
     z-index: 1;
 }
 
-/* section3 */
+/* section3 
 #section3 {
     position: relative;
     height: 750px;
     padding: 50px;
     background-color: #186BFF;
 }
+ */
