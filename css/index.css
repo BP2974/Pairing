@@ -2,7 +2,28 @@ body {
     background-color: #171717;
 }
 
+#main0 {
+    position: absolute;
+    right: 0;
+    z-index: -2;
+}
+#main1 {
+    position: absolute;
+    left: 0;
+    top: 1249.55px;
+    z-index: -2;
+}
+#main2 {
+    position: absolute;
+    right: 0;
+    top: 2879.45px;
+    z-index: -2;
+}
+
 /* section1 */
+#section1 {
+    height: 1000px;
+}
 #section1 h2 {
     position: absolute;
     left: 50%;
@@ -14,6 +35,110 @@ body {
     text-align: center;
 
     color: #FFFFFF;
+}
+#section1 #c1{
+    position: absolute;
+    top: 0;
+    left: 150px;
+    transition: all 0.5s;
+    animation: moving1 forwards 3s infinite;
+}
+#section1 #c2{
+    position: absolute;
+    top: 100px;
+    left: 550px;
+    transition: all 0.5s;
+    animation: moving2 forwards 3s infinite;
+}
+#section1 #c3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    animation: moving3 forwards 3s infinite;
+}
+#section1 #c4{
+    position: absolute;
+    top: 320px;
+    left: 250px;
+    transition: all 0.5s;
+    animation: moving4 forwards 3s infinite;
+}
+#section1 #c5{
+    position: absolute;
+    top: 100px;
+    right: 250px;
+    transition: all 0.5s;
+    animation: moving5 forwards 3s infinite;
+}
+#section1 #c6{
+    position: absolute;
+    top: 350px;
+    right: 10px;
+    transition: all 0.5s;
+    animation: moving6 forwards 3s infinite;
+}
+#section1 #c7{
+    position: absolute;
+    top: 500px;
+    left: 30px;
+    transition: all 0.5s;
+    animation: moving7 forwards 3s infinite;
+}
+#section1 #c8{
+    position: absolute;
+    top: 600px;
+    right: 200px;
+    transition: all 0.5s;
+    animation: moving8 forwards 3s infinite;
+}
+#section1 #c9{
+    position: absolute;
+    top: 850px;
+    left: 0;
+}
+#c1:hover, #c2:hover, #c3:hover, #c4:hover, #c5:hover, #c6:hover, #c7:hover, #c8:hover{
+    opacity: 0;
+}
+@keyframes moving1 {
+    0% {top: -10px}
+    50% {top: 0px}
+    100% {top: -10px}
+}
+@keyframes moving2 {
+    0% {top: 85px}
+    50% {top: 100px;}
+    100% {top: 85px}
+}
+@keyframes moving3 {
+    0% {top: -10px}
+    50% {top: 0px}
+    100% {top: -10px}
+}
+@keyframes moving4 {
+    0% {top: 300px}
+    50% {top: 320px;}
+    100% {top:300px}
+}
+@keyframes moving5 {
+    0% {top: 90px}
+    50% {top: 100px;}
+    100% {top: 90px}
+}
+@keyframes moving6 {
+    0% {top: 330px}
+    50% {top: 350px;}
+    100% {top: 330px}
+}
+@keyframes moving7 {
+    0% {top: 490px}
+    50% {top: 500px;}
+    100% {top: 490px}
+}
+@keyframes moving8 {
+    0% {top: 590px}
+    50% {top: 600px;}
+    100% {top: 590px}
 }
 
 /* #move {
@@ -181,16 +306,17 @@ body {
     top: 536px;
 }
 
-/* section2
+/* section2 */
 #section2 {
     position: relative;
     height: 750px;
 }
 #section2 h2 {
+    color: #FFFFFF;
     font-family: 'SBAggroB';
     position: absolute;
     left: 42px;
-    top: 237px;
+    top: 200px;
     font-size: 77px;
     line-height: 121px;
 }
@@ -253,12 +379,100 @@ body {
     line-height: 33px;
     z-index: 1;
 }
-
-/* section3 
-#section3 {
-    position: relative;
-    height: 750px;
-    padding: 50px;
-    background-color: #186BFF;
+#section2 p {
+    margin: 480px 0 0 20px;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 25px;
 }
- */
+
+/* section3 */ 
+#section3 img{
+    width: 100%;
+    margin: 0;
+}
+
+/* section4 */
+#section4 {
+    position: relative;
+    height: 1200px;
+}
+#section4 h2 {
+    margin: 100px 0;
+    font-family: 'SBAggroM';
+    font-size: 77px;
+    line-height: 121px;
+    color: #FFFFFF;
+}
+#section4 #tb1 {
+    position: absolute;
+    width: 300px;
+    right: 30px;
+    top: 100px;
+}
+#section4 #tb2 {
+    position: absolute;
+    width: 300px;
+    right: 450px;
+    top: 250px;
+}
+#section4 #tb3 {
+    position: absolute;
+    width: 300px;
+    right: 600px;
+    top: 600px;
+}
+#section4 #tb4 {
+    position: absolute;
+    width: 300px;
+    right: 30px;
+    top: 650px;
+}
+
+/* section5 */
+#section5 {
+    position: relative;
+    height: 700px;
+}
+#section5 h2 {
+    font-family: 'SBAggroM';
+    font-size: 77px;
+    line-height: 121px;
+    color: #FFFFFF;
+}
+#section5 h2 span {
+    color: #186BFF;
+    margin-top: 50px;
+    transition: all 1s;
+    transform-origin: -50% 0%;
+}
+#section5 h2 span:hover {
+    font-size: 150px;
+}
+#section5 img {
+    position: absolute;
+    right: 150px;
+}
+
+/* section6 */
+#section7 {
+    height: 800px;
+    position: relative;
+}
+#section7 img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -104px 0 0 -120px;
+}
+
+#text1{
+    margin-bottom: -10px;
+}
+#text2{
+    margin-top: -20px;
+}
+#banner {
+    width: 100%;
+    margin: 0;
+}
