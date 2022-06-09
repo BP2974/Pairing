@@ -19,6 +19,7 @@ header {
     z-index: 3;
     background-color: #186dff58;
     backdrop-filter: blur(3px);
+    transition: top 1s;
 }     
 header nav {
     /* border: 2px solid blue; */

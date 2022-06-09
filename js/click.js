@@ -4,7 +4,7 @@ var P3 = document.getElementById("p3");
 var P4 = document.getElementById("p4");
 
 P1.onclick = function(){
-    P1.style.opacity = "0";
+    P1.style.display = "none";
 }
 P2.onclick = function(){
     P2.style.opacity = "0";
