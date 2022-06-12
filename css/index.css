@@ -1,6 +1,5 @@
 body {
     background-color: #171717;
-    overflow: hidden;
 }
 
 #main0 {
@@ -11,13 +10,13 @@ body {
 #main1 {
     position: absolute;
     left: 0;
-    top: 1249.55px;
+    top: 1700.55px;
     z-index: -2;
 }
 #main2 {
     position: absolute;
     right: 0;
-    top: 2879.45px;
+    top: 3084.45px;
     z-index: -2;
 }
 
@@ -28,14 +27,18 @@ body {
 #section1 h2 {
     position: absolute;
     left: 50%;
-    top: 250px;
-    margin-left: -360px;
+    top: 330px;
+    margin-left: -300px;
     font-family: 'SB Aggro';
-    font-size: 160px;
+    font-size: 96px;
     display: inline;
     text-align: center;
-
+    line-height: 80px;
     color: #FFFFFF;
+}
+#section1 h2 span {
+    font-size: 34px;
+    font-family: 'SBAggroL';
 }
 #section1 #c1{
     position: absolute;
@@ -347,57 +350,77 @@ body {
     position: absolute;
     left: 42px;
     top: 200px;
-    font-size: 77px;
+    font-size: 60px;
     line-height: 121px;
+    margin-left: -1000px;
+    transition: all 0.8s;
 }
-#section2 h2 .blue {
+#section2 h2.active {
+    margin-left: 0px;
+}
+#section2 h2 #blue {
+    color: #186BFF;
+    font-size: 150px;
+    transition: all 0.3s;
+}
+#section2 h2 #blue {
     color: #186BFF;
     font-size: 150px;
 }
-#section2 h2 div {
+#section2 h2 #line {
     display: inline-block;
-    background-color: #186BFF;
+    background-color: white;
     width: 100px;
     height: 30px;
     margin-bottom: 30px;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
-#section2 h2 div:hover {
-    width: 450px;
-}
-#section2 #text{
-    top: 22px;
-    left: 22px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    vertical-align: middle;
-    text-align: center;
+#section2 h2 #line.active {
+    width: 230px;
 }
 #section2 #t1{
     position: absolute;
     left: 791px;
-    top: 209px;
+    top: 219px;
+    margin-top: -100px;
+    opacity: 0;
+    transition: all 0.3s;
 }
 #section2 #t2{
     position: absolute;
     left: 1004.07px;
-    top: 260px;
+    top: 270px;
+    opacity: 0;
+    transition: all 0.4s;
+    margin-top: -120px;
 }
 #section2 #t3{
     position: absolute;
     left: 791px;
-    top: 313px;
+    top: 323px;
+    opacity: 0;
+    margin-top: -140px;
+    transition: all 0.5s;
 }
 #section2 #t4{
     position: absolute;
     left: 1004.07px;
-    top: 367px;
+    top: 377px;
+    opacity: 0;
+    margin-top: -160px;
+    transition: all 0.6s;
 }
 #section2 #t5{
     position: absolute;
     left: 883.8px;
-    top: 425px;
+    opacity: 0;
+    margin-top: -180px;
+    top: 435px;
+    transition: all 0.7s;
+}
+#section2 #t1.active, #section2 #t2.active, #section2 #t3.active, #section2 #t4.active, #section2 #t5.active {
+    opacity: 1;
+    margin-top: 0;
 }
 #section2 .text {
     position: absolute;
@@ -409,100 +432,269 @@ body {
     line-height: 33px;
     z-index: 1;
 }
-#section2 p {
+#section2 #section2_p {
     margin: 480px 0 0 20px;
     color: #FFFFFF;
     font-size: 14px;
     line-height: 25px;
+    margin-left: -1000px;
+    transition: all 0.5s;
+}
+#section2 #section2_p.active {
+    margin-left: 20px;
 }
 
 /* section3 */ 
-#section3 img{
-    width: 100%;
-    margin: 0;
+#section3 {
+    padding: 0 40px;
+    position: relative;
+    height: 700px;
 }
-
+#section3 h2{
+    color: #FFFFFF;
+    font-size: 64px;
+    font-family: 'SBAggroL';
+    margin-top: 100px;
+}
+#section3 #h23 {
+    margin-left: -1000px;
+    transition: all 0.5s;
+}
+#section3 #h23.active {
+    margin-left: 0;
+}
+#section3 p{
+    color: #FFFFFF;
+    font-family: 'SBAggroB';
+    margin-top: 50px;
+}
+#section3 #today {
+    opacity: 0;
+    transition: all 0.5s;
+    font-size: 100px;
+}
+#section3 #today.active {
+    opacity: 1;
+    font-size: 161px;
+}
+#section3 #today_p {
+    position: absolute;
+    right: 600px;
+    opacity: 0;
+    top: 100px;
+    transition: all 0.4s;
+}
+#section3 #today_p.active {
+    right: 300px;
+    opacity: 1;
+}
+#section3 #today_l {
+    position: absolute;
+    right: 600px;
+    bottom: 250px;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s;
+}
+#section3 #today_l.active {
+    right: 400px;
+    opacity: 1;
+}
 /* section4 */
 #section4 {
+    padding: 0 40px;
     position: relative;
-    height: 1200px;
+    height: 700px;
 }
-#section4 h2 {
-    margin: 100px 0;
-    font-family: 'SBAggroM';
-    font-size: 77px;
-    line-height: 121px;
+#section4 h2{
     color: #FFFFFF;
+    font-size: 64px;
+    font-family: 'SBAggroL';
+    margin-top: 100px;
+    margin-left: -1000px;
+    transition: all 0.4s;
 }
-#section4 #tb1 {
+#section4 #h24.active {
+    margin-left: 0;
+}
+#section4 p{
+    color: #FFFFFF;
+    font-family: 'SBAggroB';
+    margin-top: 50px;
+    transition: all 0.4s;
+}
+#section4 #check {
+    font-size: 210px;
+    opacity: 0;
+}
+#section4 #check.active {
+    font-size: 161px;
+    opacity: 1;
+}
+#section4 #check_p {
     position: absolute;
-    width: 300px;
-    right: 30px;
+    right: 100px;
     top: 100px;
+    opacity: 0;
+    transition: all 0.4s;
 }
-#section4 #tb2 {
-    position: absolute;
-    width: 300px;
-    right: 450px;
-    top: 250px;
+#section4 #check_p.active {
+    right: 300px;
+    opacity: 1;
 }
-#section4 #tb3 {
+#section4 #check_l {
     position: absolute;
-    width: 300px;
-    right: 600px;
-    top: 600px;
+    right: 200px;
+    bottom: 250px;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s;
 }
-#section4 #tb4 {
-    position: absolute;
-    width: 300px;
-    right: 30px;
-    top: 650px;
+#section4 #check_l.active {
+    right: 400px;
+    opacity: 1;
 }
 
 /* section5 */
 #section5 {
+    padding: 0 40px;
     position: relative;
     height: 700px;
 }
-#section5 h2 {
-    font-family: 'SBAggroM';
-    font-size: 77px;
-    line-height: 121px;
+#section5 h2{
     color: #FFFFFF;
+    font-size: 64px;
+    font-family: 'SBAggroL';
+    margin-top: 100px;
 }
-#section5 h2 span {
-    color: #186BFF;
+#section5 #h25 {
+    margin-left: -1000px;
+    transition: all 0.4s;
+}
+#section5 #h25.active {
+    margin-left: 0;
+}
+#section5 p{
+    font-size: 161px;
+    color: #FFFFFF;
+    font-family: 'SBAggroB';
     margin-top: 50px;
+}
+#section5 #chat {
+    opacity: 0;
     transition: all 1s;
-    transform-origin: -50% 0%;
 }
-#section5 h2 span:hover {
-    font-size: 150px;
+#section5 #chat.active {
+    opacity: 1;
+    animation: chat forwards 1.3s;
 }
-#section5 img {
+#section5 #chat_p {
+    position: absolute;
+    right: 300px;
+    top: 100px;
+    opacity: 0;
+    transition: all 1s;
+}
+#section5 #chat_p.active {
+    opacity: 1;
+    animation: chat forwards 1.3s;
+}
+#section5 #chat_l {
     position: absolute;
     right: 150px;
+    bottom: 250px;
+    z-index: -1;
+    opacity: 0;
+    transition: all 1s;
+}
+#section5 #chat_l.active {
+    opacity: 1;
+    animation: chat forwards 1.3s;
+}
+@keyframes chat {
+    0% {margin-top: 0;}
+    25% {margin-top: 50px;}
+    50% {margin-top: 0;}
+    75% {margin-top: 30px;}
+    100% {margin-top: 0;}
 }
 
 /* section6 */
-#section7 {
+#section6 {
+    padding: 0 40px;
+    position: relative;
+    height: 700px;
+}
+#section6 h2{
+    color: #FFFFFF;
+    font-size: 64px;
+    font-family: 'SBAggroL';
+    margin-top: 100px;
+}
+#section6 #h26 {
+    margin-left: -1000px;
+    transition: all 0.4s;
+}
+#section6 #h26.active {
+    margin-left: 0;
+}
+#section6 p{
+    font-size: 161px;
+    color: #FFFFFF;
+    font-family: 'SBAggroB';
+    margin-top: 250px;
+    opacity: 0;
+    transition: all 0.6s;
+}
+#section6 #bord.active {
+    opacity: 1;
+    margin-top: 50px;
+}
+#section6 #bord_p {
+    position: absolute;
+    right: 300px;
+    top: 300px;
+    transition: all 0.4s;
+    opacity: 0;
+}
+#section6 #bord_p.active {
+    top: 100px;
+    opacity: 1;
+}
+#section6 #bord_l {
+    position: absolute;
+    right: 300px;
+    bottom: -100px;
+    z-index: -1;
+    transition: all 0.6s;
+    opacity: 0;
+}
+#section6 #bord_l.active {
+    bottom: 100px;
+    opacity: 1;
+}
+
+/* section7 */
+#section7 #text1{
+    margin-bottom: -10px;
+}
+#section7 #text2{
+    margin-top: -20px;
+}
+#section7 #banner {
+    width: 100%;
+    margin: 0;
+}
+
+/* section8 */
+#section8 {
     height: 800px;
     position: relative;
 }
-#section7 img{
+#section8 img{
     position: absolute;
     top: 50%;
     left: 50%;
     margin: -104px 0 0 -120px;
 }
 
-#text1{
-    margin-bottom: -10px;
-}
-#text2{
-    margin-top: -20px;
-}
-#banner {
-    width: 100%;
-    margin: 0;
-}
