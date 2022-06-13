@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", function () {
     window.onscroll = function(){
-        console.log(window.scrollY);
+        /* console.log(window.scrollY); */
         if(window.scrollY>850){
             document.getElementById("section2_h2").classList.add("active");
             document.getElementById("t1").classList.add("active");

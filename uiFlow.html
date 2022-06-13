@@ -26,7 +26,7 @@
     <!-- css -->
     <link rel='stylesheet' type='text/css' href='./css/reset.css' />
     <link rel='stylesheet' type='text/css' href='./css/common.css' />
-    <link rel='stylesheet' type='text/css' href='./css/guide.css' />
+    <link rel='stylesheet' type='text/css' href='./css/uiFlow.css' />
     <!-- 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,12 +34,8 @@
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/jquery.fadethis.js"></script>
-    <script src="https://cdn.rawgit.com/jquery/jquery-mousewheel/master/jquery.mousewheel.min.js"></script>
     <script src="./js/common.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-    <script src="./js/scroll.js"></script>
+    <script src="./js/uiFlow.js"></script>
 
     <title>페어링:Pairing</title>
 </head>
@@ -58,118 +54,128 @@
 
     <section id="section1" class="inner fade">
         <h2>익명을 통한 서로의 솔직담백한 이야기</h2>
-        <img src="./img/mokup.png">
-        <img id="b1" src="./img/b1.png">
-        <ul>
-            <li>하루질문</li>
-            <li>체크리스트</li>
-            <li>익명채팅</li>
-        </ul>
+        <div id="main">
+            <img src="./img/mokup.png">
+            <ul>
+                <li class="li_top">하루질문</li>
+                <li>체크리스트</li>
+                <li class="li_top">익명채팅</li>
+            </ul>
+        </div>
         <div class="clear"></div>
-        <p>페어링이 처음이시라구요?<br/>걱정마세요!</p>
-        <img id="b2" src="./img/b2.png">
+        <p>페어링의 주요 기능 4가지로<br/><sapn class="blue">풀고, 줄이고, 날리고, 높여보세요!</sapn></p>
+        <div class="clear"></div>
     </section>
-    
-    <section id="section2" class="side_scroll">
-        <div class="scroll_element">
-            <img src="./img/g1.png">
-            <h2>간편하게 쓱 로그인</h2>
+
+    <section id="section2" class="inner">
+        <div id="mockup1">
+            <img class="g1" id="g1_1" src="./img/g2.png">
+            <img class="g1" id="g1_2" src="./img/g3.png">
+            <img class="g1" id="g1_3" src="./img/g4.png">
+            <img class="g1" id="g1_4" src="./img/g5.png">
+            <img class="g1" id="g1_5" src="./img/g6.png">
+            <img class="g1" id="g1_6" src="./img/g7.png">
+            <img class="g1" id="g1_7" src="./img/g8.png">
+            <img class="g1" id="g1_8" src="./img/g9.png">
+            <img class="g1" id="g1_9" src="./img/g10.png">
+            <img class="g1" id="g1_10" src="./img/g11.png">
+            <img class="g1" id="g1_11" src="./img/g12.png">
+            <img class="g1" id="g1_12" src="./img/g13.png">
+            <img class="g1" id="g1_13" src="./img/g14.png">
         </div>
-        <div class="scroll_element">
-            <img src="./img/g2.png">
-            <h2>하루질문에 답변해보세요!</h2>
+        <div id="text1">
+            <h2><span class="blue">하루질문</span>으로<br/>부모-자녀의 <span class="blue">이야기</span>를<br/></h2>
+            <div id="today"><span id="today_1" class="blue">풀</span><span class="blue">어!</span></div>
+            <p>하루마다 제공되는 질문에 답변해봐요.<br/>다른 부모-자녀의 의견을 보고 참고 또는 이해할 수 있어요.</p>
         </div>
-        <div class="scroll_element">
-            <img src="./img/g3.png">
-            <h2>나와 다른 생각들을 알아보세요!</h2>
+        <div id="today_text" class="blue _text">
+            하루질문
         </div>
-        <div class="scroll_element">
-            <img src="./img/g4.png">
-            <h2>캘린더로 한눈에 확인!</h2>
+        <div id="text2">
+            <span class="blue">나와 다른 생각 </span>에서<br/><br/>
+            해시태그를 통해 원하는 답변이나<br/>실시간 인기태그를 확인할 수 있어요.<br/><br/>
+            실시간 답변을 통해 다른 부모-자녀들의<br/>이야기도 들어볼 수 있어요.
+        </div>
+        <div id="text3">
+            <span class="blue">캘린더 </span>에서<br/><br/>
+            오늘의 답변이나 다른 날을 선택해<br/>해당 날짜의 기록도 확인할 수 있어요.<br/><br/>
+            해당 날짜의 인기 태그를 확인해<br/>나의 답변과 비교할 수 있어요.
+        </div>
+        <div id="text4">
+            <h2><span class="blue">체크리스트</span>로<br/>부모-자녀의 <span class="blue">거리</span>를<br/></h2>
+            <div id="check"><span id="check_1" class="blue">줄</span><span class="blue">여!</span></div>
+            <p>하루씩 오늘 하루를 되돌아볼 수 있는 리스트를 체크해봐요.<br/>체크리스트는 부모-자녀가 더 가까워질 수 있게 도움을 줘요.</p>
+        </div>
+        <div id="check_text" class="blue _text">
+            체크리스트
+        </div>
+        <div id="text5">
+            <span class="blue">하루체크 </span>에서<br/><br/>
+            접속일 또는 나의 소통 레벨을 확인하거나<br/><br/>
+            4가지의 주제를 통해 부모-자녀에게<br/>도움을 줄 수 있는 리스트를 제공해요.
+        </div>
+        <div id="text6">
+            <h2><span class="blue">익명채팅</span>으로<br/>부모-자녀의 <span class="blue">고민과 갈등</span>을<br/></h2>
+            <div id="chat"><span id="chat_1" class="blue">날</span><span class="blue">려!</span></div>
+            <p>익명으로 구성된 부모-자녀들과 채팅해봐요.<br/>다향하지만 본인이 원하는 주제로 대화할 수 있어요.</p>
+        </div>
+        <div id="chat_text" class="blue _text">
+            익명채팅
+        </div>
+        <div id="text7">
+            <span class="blue">인기채팅방 </span>에서<br/><br/>
+            불 타고 잇는 HOT한 상위 채팅방과<br/>
+            순서대로 배치된 채팅방을<br/>
+            마음대로 선택 후 입장할 수 있어요.<br/><br/>
+            현재 입장 인원을 제공하고 있어<br/>
+            부모 또는 자녀의 수를 확인할 수 있어요.
+        </div>
+        <div id="text8">
+            <span class="blue">맞춤채팅 </span>에서<br/><br/>
+            본인에게 맞는 채팅방을 옵션 설정을 통해<br/>
+            방을 개설할 수 있어요.<br/><br/>
+            옵션 설정에는 성별, 나이, 인원, 태그까지<br/>
+            다양한 설정을 통해서 원하는 주제로<br/>
+            원하는 부모-자녀와 소통 가능해요.
+        </div>
+        <div id="text9">
+            <span class="blue">채팅방 </span>에서<br/><br/>
+            나이대와 부모-자녀를 확인할 수 있어요.<br/><br/>
+            공감 버튼을 통해<br/>
+            대화를 하면서 공감할 수도 있어요.
+        </div>
+        <div id="text10">
+            <span class="blue">채팅방 </span>에서<br/><br/>
+            부모-자녀의 사진을 눌러<br/>
+            프로필을 확인할 수 있어요.<br/><br/>
+            공감한 수, 소통 레벨, 조회수, 접속일을<br/>
+            확인할 수 있으며<br/>
+            해당 부모-자녀의 신뢰도가 높아져요.
+        </div>
+        <div id="text11">
+            <h2><span class="blue">게시판</span>으로<br/>부모-자녀의 <span class="blue">공감</span>을<br/></h2>
+            <div id="bord"><span id="bord_1" class="blue">높</span><span class="blue">여!</span></div>
+            <p>나이대와 부모와 자녀 두가지만 구분되는 익명 서비스로<br/>공감을 주고 받으며 소통하고 인기 주제는 무엇인지 확인해봐요.</p>
+        </div>
+        <div id="bord_text" class="blue _text">
+            게시판
+        </div>
+        <div id="text12">
+            <span class="blue">핫게시판 </span>에서<br/><br/>
+            제일 인기있는 글들을 확인하거나<br/>
+            공감할 수도 있고 댓글을 달 수 있어요.<br/><br/>
+            자유롭게 부모-자녀 서로 대화를 하면서<br/>
+            공감 버튼을 통해 해당 주제가<br/>
+            얼마나 이슈인지 확인할 수 있어요.
+        </div>
+        <div id="text13">
+            <span class="blue">공감 등급 게시판 </span>에서<br/><br/>
+            평소에 받은 공감들이 누적되어<br/>
+            그 수만큼 공감 등급이 정해져요.<br/><br/>
+            공감 등급은 총 5가지 등급이며,<br/>
+            본인 등급에 맞게 자동으로 배치돼요!
         </div>
     </section>
-
-    <section id="section3" class="inner">
-        <h2>익명채팅을 통해<br/>실시간으로 물어보고 답해보세요!</h2>
-        <img src="./img/d1.png">
-    </section>
-
-    <section id="section4" class="inner container1">
-        <div class="animate ani_1"><img src="./img/g5.png"></div>
-        <div class="trigger tri_1"></div>
-        <div class="animate ani_2"><img src="./img/g6.png"></div>
-        <div class="trigger tri_2"></div>
-        <div class="animate ani_3"><img src="./img/g7.png"></div>
-        <div class="trigger tri_3"></div>
-        <div class="animate ani_4"><img src="./img/g8.png"></div>
-        <div class="trigger tri_4"></div>
-        <div class="animate ani_5"><img src="./img/g9.png"></div>
-        <div class="trigger tri_5"></div>
-    </section>
-
-    <section id="section5" class="inner container1">
-        <div class="animate animate_1"><h2>채팅방에 접속!</h2></div>
-        <div class="trigger trigger_1"></div>
-        <div class="animate animate_2"><h2>인기 채팅방을 확인해보세요!</h2></div>
-        <div class="trigger trigger_2"></div>
-        <div class="animate animate_3"><h2>방에 들어가서 익명으로 편안하게!</h2></div>
-        <div class="trigger trigger_3"></div>
-        <div class="animate animate_4"><h2>간단한 프로필로 상대방 확인!</h2></div>
-        <div class="trigger trigger_4"></div>
-        <div class="animate animate_5"><h2>필터설정을 통해 원하는 정보만!</h2></div>
-        <div class="trigger trigger_5"></div>
-    </section> 
-    <div class="clear"></div>
-    
-    <section id="section6" class="inner">
-        <h2>익명게시판으로<br/>고민을 해결하세요!</h2>
-        <img src="./img/d2.png">
-    </section>
-
-    <section id="section7" class="inner container2">
-        <div class="animate ani_1"><img src="./img/g10.png"></div>
-        <div class="trigger tri_1"></div>
-        <div class="animate ani_2"><img src="./img/g11.png"></div>
-        <div class="trigger tri_2"></div>
-        <div class="animate ani_3"><img src="./img/g12.png"></div>
-        <div class="trigger tri_3"></div>
-    </section>
-
-    <section id="section8" class="inner container2">
-        <div class="animate animate_6"><h2>게시판에 접속!</h2></div>
-        <div class="trigger trigger_6"></div>
-        <div class="animate animate_7"><h2>핫게시판부터</h2></div>
-        <div class="trigger trigger_7"></div>
-        <div class="animate animate_8"><h2>공감등급 게시판까지!</h2></div>
-        <div class="trigger trigger_8"></div>
-    </section> 
-    <div class="clear"></div>
-
-    <section id="section9" class="inner">
-        <h2>하루하루 체크리스트를 통해<br/>서로 더 가까워져보세요!</h2>
-        <img src="./img/d3.png">
-    </section>
-
-    <section id="section10" class="inner container3">
-        <div class="animate ani_1"><img src="./img/g13.png"></div>
-        <div class="trigger tri_1"></div>
-        <div class="animate ani_2"><img src="./img/g14.png"></div>
-        <div class="trigger tri_2"></div>
-    </section>
-
-    <section id="section11" class="inner container3">
-        <div class="animate animate_9"><h2>체크리스트에 나온 행동들을 실천!</h2></div>
-        <div class="trigger trigger_9"></div>
-        <div class="animate animate_10"><h2>색이 채워지면서 등급이 올라가요!</h2></div>
-        <div class="trigger trigger_10"></div>
-    </section> 
-    <div class="clear"></div>
-
-    <section id="section12">
-        <h2>페어링 가이드</h2>
-    </section>
-
-    <script src="./js/scroll.js"></script>
 
     <div id="footer_back">
         <footer class="inner">
@@ -197,15 +203,6 @@
             <div class="clear"></div>
         </footer>
     </div>
-
-    <script>
-    $(window).fadeThis();
-
-    $(".side_scroll").mousewheel(function(event, delta) {
-        this.scrollLeft -= (delta * 200);
-        event.preventDefault();
-    });
-</script>
 </body>
 
 </html>
