@@ -124,12 +124,11 @@
     top: 430px;
 }
 #section4 li {
-    margin: 0px 50px;
-    width: calc(100vw * 269 / 1920);
-    height: calc(100vw * 269 / 1920);
-    margin: 0 63px;
+    margin: 0px 70px;
+    width: 200px;
+    height: 200px;
     float: left;
-    line-height: 120%;
+    line-height: 150%;
     border: #186BFF 2px solid;
     background-color: #FFFFFF;
     border-radius: 50%;
@@ -157,7 +156,7 @@
     margin-top: 100px;
     font-family: 'SBAggroL';
     font-size: 16px;
-    line-height: 39px;
+    line-height: 150%;
     color: #FFFFFF;
 }
 
@@ -173,15 +172,16 @@
     float: left;
 }
 #section6 #qna h2 {
-    font-family: 'SBAggroM';
+    font-family: 'SBAggroL';
     margin: 50px 0 30px 0;
+    line-height: 150%;
     font-size: 21px;
     color: #FBF329;
 }
 #section6 #qna p {
     font-family: 'SBAggroL';
     font-size: 17px;
-    line-height: 35px;
+    line-height: 150%;
     color: #FFFFFF;
 }
 #section6 #qna_img {

@@ -34,11 +34,11 @@ body {
     color: #FFF;
     margin-top: 100px;
 }
-#section2 img {
-    margin: 10px 0;
+#section2 #mood{
+    text-align: center;
 }
-#section2 img.right {
-    float: right;
+#section2 img {
+    margin: 10px 10px;
 }
 
 /* section3 */
@@ -72,58 +72,93 @@ body {
     color: #FFF;
     margin-top: 100px;
 }
-#section4 .typo {
-    font-size: 38px;
-    font-family: "SBAggroM";
-    margin: 30px 0;
+#section4 #web, #section #app{
+    width: 50%;
+    float: left;
+}
+#section4 #web.typo {
+    font-size: 28px;
+    font-family: "SBAggroL";
     color: #FFFFFF;
 }
-#section4 .typo img {
+#section4 #app>img {
+    width: 50%;
     margin: 0 0 5px 10px;
 }
-#section4 p {
+#section4 #web p {
     font-family: "SBAggroB";
-    font-size: 70px;
-    line-height: 100px;
-    margin: 100px 0;
+    font-size: 36px;
+    line-height: 150%;
+    margin: 80px 0;
+    color: #FFFFFF;
+}
+#section4 #app p {
+    font-size: 36px;
+    line-height: 150%;
+    margin: 77px 0;
     color: #FFFFFF;
 }
 
 /* section5 */
+#section5 {
+    height: 800px;
+}
 #section5 h2 {
     font-weight: 500;
     font-size: 19px;
     color: #FFF;
     margin-top: 100px;
 }
-#section5 ul {
-    width: 33.33%;
-    float: left;
+#section5 #icon {
+    margin: 20px 0;
+    text-align: center;
+    color: #FFF;
 }
-#section5 li {
-    font-family: "SBAggroL";
+#section5 #icon h3 {
     font-size: 32px;
-    line-height: 40px;
-    color: #FFFFFF;
+    font-family: "SBAggroL";
+    margin: 100px 0 50px 0;
 }
-#section5 img {
-    width: 300px;
+#section5 #icon p {
+    font-family: "SBAggroL";
 }
 
 /* section6 */
-#section6 {
+#section6 h2 {
+    font-weight: 500;
+    font-size: 19px;
+    color: #FFF;
+    margin-top: 100px;
+}
+#section6 #app_logo {
+    text-align: center;
+    margin: 30px 0;
+    color: #FFF;
+}
+#section6 #app_logo h3 {
+    font-size: 32px;
+    font-family: "SBAggroL";
+    margin: 100px 0 50px 0;
+}
+#section6 #app_logo p {
+    font-family: "SBAggroL";
+    line-height: 150%;
+}
+
+/* section7 */
+#section7 {
     position: relative;
     height: 1000px;
     overflow: hidden;
 }
-#section6 #img1 {
+#section7 #img1 {
     position: absolute;
     width: 700px;
     top: 100px;
     left: -100px;
     animation: rotate_image1 10s linear infinite; transform-origin: 50% 50%;
 }
-#section6 #img2 {
+#section7 #img2 {
     position: absolute;
     right: -150px;
     animation: rotate_image2 10s linear infinite; transform-origin: 50% 50%;
@@ -138,7 +173,7 @@ body {
         transform: rotate(-360deg);
     }
 }
-#section6 .mokup {
+#section7 .mokup {
     position: absolute;
     width: 800px;
     bottom: 0;
