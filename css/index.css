@@ -351,7 +351,7 @@
 }
 #section1 #p2 {
     position: absolute;
-    left: -50px;
+    left: -10px;
     top: 120px;
     z-index: -1;
     transition: all 1s;
@@ -790,15 +790,13 @@
 }
 
 /* section7 */
-#section7 #text1{
-    margin-bottom: -10px;
+#section7 div{
+    margin: 0 auto;
+    height: 700px;
 }
-#section7 #text2{
-    margin-top: -20px;
-}
-#section7 #banner {
+#section7 iframe{
     width: 100%;
-    margin: 0;
+    height: 100%;
 }
 
 /* section8 */
