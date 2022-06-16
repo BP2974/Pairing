@@ -262,12 +262,14 @@
 }
 #section2 #mockup1{
     position: sticky;
-    top: 180px;
+    top: 30%;
+    margin-left: 43%;
+}
+#section2 #mockup1{
+    width: 40vw;
 }
 #section2 .g1 {
     position: absolute;
-    top: 0;
-    left: 200px;
 }
 #section2 #g1_2 {
     transition: all 0.5s;

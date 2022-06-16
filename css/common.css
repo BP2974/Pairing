@@ -1,4 +1,4 @@
-body {background-color: #171717; min-width: 1402px; max-width: 1920px;}
+body {background-color: #171717; min-width: 1402px; max-width: 1920px; margin: 0 auto;}
 a {color: black;} 
 a:link {color: black;}
 a:hover {color: black;}

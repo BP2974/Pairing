@@ -17,13 +17,16 @@ window.addEventListener("DOMContentLoaded", function () {
             document.getElementById("t5").classList.remove("active");
         }
 
-
         if(window.scrollY>950){
             document.getElementById("line").classList.add("active");
+        } else {
+            document.getElementById("line").classList.remove("active");
+        }
+
+        if(window.scrollY>1000){
             document.getElementById("textbox").classList.add("active");
             document.getElementById("section2_p").classList.add("active");
         } else {
-            document.getElementById("line").classList.remove("active");
             document.getElementById("textbox").classList.remove("active");
             document.getElementById("section2_p").classList.remove("active");
         }
