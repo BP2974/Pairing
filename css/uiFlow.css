@@ -63,22 +63,30 @@
     font-family: "SBAggroL";
 }
 #section2 #text1 {
-    text-align: right;
     position: sticky;
-    top: 210px;
+    top: 40vh;
     margin-top: 30px;
     transition: all 0.3s;
 }
 #section2 h2 {
     color: #ffffff;
-    font-size: 48px;
+    font-size: 40px;
     font-family: "SBAggroL";
+    text-align: right;
+}
+#section2 .text_l {
+    float: left;
+    margin-left: 5vw;
 }
 #section2 p {
     color: #ffffff;
     font-family: "SBAggroL";
+    margin-top: 30px;
+    text-align: right;
 }
 #section2 #text1 #today {
+    position: absolute;
+    right: 10vw;
     margin: 30px 0;
     font-size: 96px;
     font-family: "SBAggroB";
@@ -87,11 +95,11 @@
     transition: all 0.5s;
 }
 #section2 #text1 #today_1.active {
-    margin-right: 150px;
+    margin-left: 150px;
 }
 #section2 ._text {
     position: sticky;
-    top: 210px;
+    top: 40vh;
     font-size: 36px;
     font-family: "SBAggroB";
     text-align: right;
@@ -100,7 +108,7 @@
 }
 #section2 #text2 {
     position: sticky;
-    top: 350px;
+    top: 50vh;
     font-size: 20px;
     line-height: 26px;
     text-align: right;
@@ -111,7 +119,7 @@
 }
 #section2 #text3 {
     position: sticky;
-    top: 350px;
+    top: 50vh;
     font-size: 20px;
     line-height: 26px;
     text-align: right;
@@ -123,12 +131,14 @@
 #section2 #text4 {
     text-align: right;
     position: sticky;
-    top: 210px;
+    top: 40vh;
     margin-top: 30px;
     transition: all 0.3s;
     opacity: 0;
 }
 #section2 #text4 #check {
+    position: absolute;
+    right: 10vw;
     margin: 30px 0;
     font-size: 96px;
     font-family: "SBAggroB";
@@ -142,7 +152,7 @@
 }
 #section2 #text5 {
     position: sticky;
-    top: 350px;
+    top: 50vh;
     font-size: 20px;
     line-height: 26px;
     text-align: right;
@@ -154,12 +164,14 @@
 #section2 #text6 {
     text-align: right;
     position: sticky;
-    top: 210px;
+    top: 40vh;
     margin-top: 30px;
     transition: all 0.3s;
     opacity: 0;
 }
 #section2 #text6 #chat {
+    position: absolute;
+    right: 10vw;
     margin: 30px 0;
     font-size: 96px;
     font-family: "SBAggroB";
@@ -178,7 +190,7 @@
 }
 #section2 #text7 {
     position: sticky;
-    top: 350px;
+    top: 50vh;
     font-size: 20px;
     line-height: 26px;
     text-align: right;
@@ -189,7 +201,7 @@
 }
 #section2 #text8 {
     position: sticky;
-    top: 350px;
+    top: 50vh;
     font-size: 20px;
     line-height: 26px;
     text-align: right;
@@ -200,7 +212,7 @@
 }
 #section2 #text9 {
     position: sticky;
-    top: 350px;
+    top: 50vh;
     font-size: 20px;
     line-height: 26px;
     text-align: right;
@@ -211,7 +223,7 @@
 }
 #section2 #text10 {
     position: sticky;
-    top: 350px;
+    top: 50vh;
     font-size: 20px;
     line-height: 26px;
     text-align: right;
@@ -223,12 +235,14 @@
 #section2 #text11 {
     text-align: right;
     position: sticky;
-    top: 210px;
+    top: 40vh;
     margin-top: 30px;
     transition: all 0.3s;
     opacity: 0;
 }
 #section2 #text11 #bord {
+    position: absolute;
+    right: 10vw;
     margin: 30px 0;
     font-size: 96px;
     font-family: "SBAggroB";
@@ -240,7 +254,7 @@
 }
 #section2 #text12 {
     position: sticky;
-    top: 350px;
+    top: 50vh;
     font-size: 20px;
     line-height: 26px;
     text-align: right;
@@ -251,7 +265,7 @@
 }
 #section2 #text13 {
     position: sticky;
-    top: 350px;
+    top: 50vh;
     font-size: 20px;
     line-height: 26px;
     text-align: right;
